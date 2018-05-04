@@ -15,14 +15,13 @@ if($_SESSION['ingelogd'] == "Ja"){
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Alavi van Oosterhout">
 	<meta name="description" content="Landing page MathMate">
-	<title>π|Onderdeel 2</title>
+	<title>π|Onderdeel 9</title>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-	<h1>Onderdeel 2</h1>
+	<h1>Onderdeel 9</h1>
 	<script src=""></script>
 </body>
 
 </html>
-

@@ -9,7 +9,6 @@
 	<title>Login formulier</title>
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="lib/animate.css">
-
 </head>
 
 <body>
