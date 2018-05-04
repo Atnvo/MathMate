@@ -1,3 +1,14 @@
+<?php 
+if($_SESSION['ingelogd'] == "Ja"){
+
+		echo "<a href='uitloggen.php'><button>Uitloggen</button></a>";
+
+	}else{
+		//Je bent niet ingelogd en dus terug naar de inlog form
+		header("Location: logindb.php");
+	}
+?>
+
 <!DOCTYPE html>
 <html lang="nl">
 
@@ -11,7 +22,12 @@
 </head>
 
 <body>
-	<script src=""></script>
+
+
+	<h1> Landing.php </h1>
+
+
+	<a href='uitloggen.php'><button>Uitloggen</button></a>
 </body>
 
 </html>

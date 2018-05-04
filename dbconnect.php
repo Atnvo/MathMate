@@ -5,11 +5,11 @@
 </head>
 <body>
 	<?php
-	//stap 1 maad db verbinding	
+	//stap 1 maad db verbinding
 		$host = "localhost";
 		$user = "root";
 		$pass = "";
-		$dbname = "MathMate";
+		$dbname = "mathmate";
 		$conn = mysqli_connect($host, $user, $pass, $dbname);
 		if(!$conn){
 			echo "Database connectie niet gelukt";
