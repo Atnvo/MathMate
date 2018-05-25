@@ -1,99 +1,196 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-* {overflow: hidden;}
+* {
+	/* border: solid 1px; */
+}
+
+body {
+	margin: 0 auto;
+	padding: 0 auto;
+}
 
 /* LoginDB Page */
+
 #particles-js {
-	position: absolute;
-	width: 100%;
-	height: 100%;
+	box-shadow: 0px 0px 30px -15px;
+	height: 93.5vh;
 	background-color: #ffffff;
-	background-image: url("");
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: 50% 50%;
-  } 
+	background-position: 40% 40%;
+	z-index: 1;
+}
 
 #container-login {
 	height: auto;
+	margin: auto;
 	position: absolute;
-	opacity: 0.5;
-	background-color: white;
+	background-color:238, 238, 238;
 	border-radius: 1%;
 	padding: 2%;
 	padding-bottom: 3%;
-	top: 45%;
-	left: 50%;
+	top: 40%;
+	left: 42.5%;
 	transform: translate(-42.5%, -42.5%);
 	box-shadow: 0px 0px 50px -15px;
 }
 
-#login-tittle {font-family: 'Raleway', sans-serif;}
-#i_link-back {color: black;}
+#login-tittle {
+	font-family: 'Roboto', sans-serif;
+}
 
 .button {
-    background-color: #38343A;
-    border: none;
-    color: white;
-    padding: 5px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
+	background-color: #38343A;
+	border: none;
+	color: white;
+	padding: 5px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
 }
 
 /* Landing Page */
+
 #h_container {
-	margin: auto; 
-	height: 100%;
+	margin-top: 1.25%!important;
+	width: 97%;
+	margin: auto;
+	height: 94vh;
 	border: solid 1px;
+	z-index: 2;
 }
 
 #header {
-	margin-top: 2vh;
+	position: sticky;
 	margin: auto;
+	margin-top: 2vh;
 	background-color: black;
-	width: 95%;
-	height: 10%;
-	border-radius: 2%;
+	width: 99.5%;
+	height: 8vh;
+	border-radius: 1%;
+	z-index: 3;
 }
-#h_logo {height: 5vh;}
+
+#h_logo {
+	margin-top: -15px;
+	height: 9vh;
+	margin-left: 1em;
+}
+
+#L_tittle-container {
+	margin: auto;
+	margin-top: -50vh;
+	text-align: center;
+	width: 40vw;
+	z-index: 4;
+}
+
+#L_tittle-container h1 {
+	font-size: 3em;
+}
+
 #h_search-icon {}
 
-#h_nav-c {
-	display: grid;
-	grid-template-columns: 1fr 3fr;
-}
-
 #h_nav-1 {
-
+	justify-self: end;
 }
 
 #h_nav-1 a {
+	margin-top: 1em;
+	margin-left: 1em;
+	text-decoration: none;
+	padding-top: 1em;
 	color: white;
+	font-size: 1.4em;
+	letter-spacing: .25vw;
+	font-family: calibri, sans-serif;
 }
+
+/* Template onderdeel pagina */
+
+#header-container_c {
+	z-index: auto;
+	margin-left: 3.5em;
+	margin-top: 1em;
+	background-color: black;
+	width: 3.5vw;
+	height: 97vh;
+	border-radius: 2%;
+}
+
+#header-container {
+	display: grid;
+	grid-template-columns: repeat(1fr);
+}
+
+#header-img_logo {
+	height: 10vh;
+	margin-top: -1.5em;
+	margin-left: .7em;
+}
+
+/* ------------------------------------------ */
+/* Content container */
+
+#content-container {
+	height: 92vh;
+	margin: auto;
+	width: 96vw;
+	margin-top: -95vh;
+	border: solid 1px black;
+	box-shadow: 0px 0px 20px -15px;
+}
+
+#content-container_2 {
+	margin-top: 1em;
+	margin-left: 6em;
+}
+
+#footer-container {
+	width: 10vw;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-left: 8em;
+}
+
+footer {
+	margin-top: 18em;
+}
+
 
 /* Smartphones (portrait and landscape) ----------- */
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-	/* Styles */
+	#header-container_c {
+		width: 15vw;
+		margin-left: 1em;
+	}
+
+	#L_tittle-container {
+		margin-top: -35em;
+		text-align: center;
+	}
+	footer {margin-top: 6.5em;}
+	#particles-js {margin-top: -4.6em;}
 }
 
 /* Desktops and laptops ----------- */
 
 @media only screen and (min-width: 1224px) {
-	/* Styles */
-}
+	#particles-js {margin-top: -4.8em;}
+	footer {margin-top:12.2em;}
 
 /* Large screens ----------- */
 
 @media only screen and (min-width: 1824px) {
-	/* Styles */
-}
+	#particles-js {margin-top: -5.8em;}
+	footer {margin-top:19em;}
 
+}
 
 :root {
 	--varnaam: blue;

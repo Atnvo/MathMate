@@ -3,5 +3,5 @@
 	session_start();
 	session_destroy();
 
-	header("Location: logindb.php");
+	header("Location: Login/logindb.php");
 ?>

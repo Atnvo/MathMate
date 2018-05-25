@@ -27,7 +27,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 		$user = mysqli_fetch_row($result);
 		$_SESSION['ingelogd'] = "Ja";
 		$_SESSION['username'] = $user[1];
-		header("Location: Landing.php");
+		header("Location: ../Landing.php");
 
 	}else{
 		header("Location: logindb.php");
