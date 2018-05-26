@@ -26,6 +26,7 @@
 
     if($result) {
         echo "Data opgeslagen in de database";
+        header("Location: logindb.php");
     }
 ?>
 

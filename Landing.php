@@ -3,6 +3,7 @@ session_start();
 if($_SESSION['ingelogd'] == "Ja"){
 	}else{
 		//Je bent niet ingelogd en dus terug naar de inlog form
+		echo ""
 		header("Location: Login/logindb.php");
 	}
 ?>
@@ -23,7 +24,6 @@ if($_SESSION['ingelogd'] == "Ja"){
 
 <body>
 	
-
 	<section id="h_container">
 		
 		<section class="animated fadeInDown" id="header">
@@ -73,7 +73,7 @@ if($_SESSION['ingelogd'] == "Ja"){
 
 		<section id="particles-js"></section>
 		
-		<section id="L_tittle-container">
+		<section class="animated pulse" id="L_tittle-container">
 			<h1>MathMate</h1>
 		
 			<?php

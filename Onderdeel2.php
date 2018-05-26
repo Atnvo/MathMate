@@ -22,7 +22,7 @@ if($_SESSION['ingelogd'] == "Ja"){
 </head>
 
 <body>
-
+	
 	<div class="animated fadeInLeft" id="header-container_c">
 		<section id="header-container">
 			<a href="Landing.php"><img id="header-img_logo" src="img/Logo-noback.png"></a>
@@ -82,6 +82,8 @@ if($_SESSION['ingelogd'] == "Ja"){
 		<a href="over-ons.php">Over ons</a>
 		<a href='uitloggen.php'>Uitloggen</a>
 	</div>
+
+	</section>
 
 </body>
 
