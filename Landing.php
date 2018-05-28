@@ -82,9 +82,12 @@ if($_SESSION['ingelogd'] == "Ja"){
 				//Gebruiker welkom heten
 				echo "<h1>Welcome ".$_SESSION['username']."!</h1>";
 			?>
-			<p>Wat is Lorem Ipsum?
-Lorem Ipsum is slechts een proeftekst uit het drukkerij- en zetterijwezen. Lorem Ipsum is de standaard proeftekst in deze bedrijfstak sinds de 16e eeuw, toen een onbekende drukker een zethaak met letters nam en ze door elkaar husselde om een font-catalogus te maken</p>
-		</section>
+			<div>
+			<p>Wat is MathMate?
+			MathMate is een website waarbij je rekensommen online kan berekenen, je kan Priemfactoren,
+			Omrekencalculator van decimaal en hexidecimaal en meer.</p>
+			</div>
+
 
 	<footer>
 		<a href='uitloggen.php'><button>Uitloggen</button></a>
