@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
+:root {
+	/* fonts */
+	--fontheading: ;
+	--fontsubheading: ;
+	--fonttext: ;
+	/* Kleuren */
+	--prim: ;
+	--sec: ;
+}
+
 * {
 	/* border: solid 1px; */
 }
@@ -133,6 +143,55 @@ body {
 	margin-left: .7em;
 }
 
+/* _________________________________________________________________________________ */
+/* Over ons */
+
+#container-overons {
+	height: 80vh;
+	width: 80vw;
+	margin: auto;
+}
+
+.persoon-beschrijving {
+	width: 14vw;
+	text-align: center;
+}
+
+.persoon-beschrijving h2 {
+	font-family: var(--fontsubheading);
+	font-size: 2em;
+	margin-bottom: 1em;
+}
+.persoon-beschrijving p {
+	font-family: var(--fonttext);
+}
+
+.persoon-website img {height: 3vh;}
+.persoon-website {
+	position: absolute;
+}
+
+#over-ons_c {
+	width: 40vw;
+	padding-top: 4em;
+	padding-bottom: 7em;
+}
+
+#over-ons_c h1 {font-family: var(--fontheading);}
+
+#over-ons_c h1 {font-family: var(--fontheading);}
+#over-ons_c p {font-family: var(--fonttext);}
+
+.photo-persoon {
+	width: 14vw;;
+	border-radius: 50%;
+}
+
+#container-persoon {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 /* ------------------------------------------ */
 /* Content container */
 
@@ -162,7 +221,6 @@ footer {
 	margin-top: 18em;
 }
 
-
 /* Smartphones (portrait and landscape) ----------- */
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
@@ -177,6 +235,16 @@ footer {
 	}
 	footer {margin-top: 6.5em;}
 	#particles-js {margin-top: -4.6em;}
+
+	#container-persoon {
+		grid-template-columns: none;
+		grid-template-rows: 1fr 1fr 1fr 1fr;
+	}
+
+	#container-overons {
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+	}
 }
 
 /* Desktops and laptops ----------- */
@@ -193,8 +261,5 @@ footer {
 
 }
 
-:root {
-	--varnaam: blue;
-}
 
-/* : var(--varnaam);
+

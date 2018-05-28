@@ -3,7 +3,6 @@ session_start();
 if($_SESSION['ingelogd'] == "Ja"){
 	}else{
 		//Je bent niet ingelogd en dus terug naar de inlog form
-		echo ""
 		header("Location: Login/logindb.php");
 	}
 ?>
@@ -64,6 +63,9 @@ if($_SESSION['ingelogd'] == "Ja"){
 				</a>
 				<a href="Onderdeel8.php">
 					<div class="link">Onderdeel 8</div>
+				</a>
+				<a href="over-ons.php">
+					<div class="link">Over ons</div>
 				</a>
 			</nav>
 		</div>
