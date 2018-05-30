@@ -1,0 +1,28 @@
+.pointer {
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 10px solid #000;
+	margin: 10px  auto 10px auto;
+}
+
+#rad {
+	width: 200px;
+	height: 200px;
+	background-image: url('../img/rad_6.gif');
+	background-size: contain;
+	margin: 0 auto;
+}
+
+#btnClearIt {
+	display: none;
+}
+
+#rad2 {
+	width: 200px;
+	height: 200px;
+	background-image: url('../img/rad_6.gif');
+	background-size: contain;
+	margin: 0 auto;
+}

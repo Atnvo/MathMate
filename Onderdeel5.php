@@ -54,7 +54,9 @@ if($_SESSION['ingelogd'] == "Ja"){
 						<div class="link">Onderdeel 5</div>
 					</a>
 					<a href="Onderdeel6.php">
-						<div class="link">Onderdeel 6</div>
+						<div class="link">Onderdeel 6
+							-Rad van fortuin
+						</div>
 					</a>
 					<a href="Onderdeel7.php">
 						<div class="link">Onderdeel 7</div>

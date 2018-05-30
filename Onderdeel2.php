@@ -42,18 +42,17 @@ if($_SESSION['ingelogd'] == "Ja"){
 			</h1>
 			<span class="footnote">
 				<a href="landing.php">-Terug naar home</a>
+			</span>
 		</div>
 
-		<div id="ing" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
-			<p>MathMate
-				<strong>Is een Website waar je</strong>
-				<br/> Omrekensommen voor getallen kunt doen
+		<div id="ing" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5" data-rotate-x="-30" data-rotate-y="20">
+			<p><strong>MathMate</strong>
+				Is een Website waar je omrekensommen voor getallen kunt doen
 				zoals<br>
-				<p>by
-				<b class="positioning">text1</b>,
-				<b class="positioning">text2</b>,
+				<b class="positioning">Factorizer</b>,
+				<b class="positioning">Tafel berekenen</b>,
 				<b class="positioning">text3</b>,
-				<b class="positioning">text4</b> and
+				<b class="positioning">text4</b> en
 				<b class="positioning">text5</b>
 		</div>
 
@@ -70,10 +69,12 @@ if($_SESSION['ingelogd'] == "Ja"){
 		</div>
 
 		<div id="its" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
-			<p>by
-				<b class="positioning">positioning</b>,
-				<b class="rotating">rotating</b> and
-				<b class="scaling">scaling</b> them on an infinite canvas</p>
+			<p>
+			Een logica docent van mboRijnland heeft ons ingeschakeld om een rekensom
+			 website maken die enkele rekensommen kan berekenen, daarnaast moest er 
+			 ook een inlogsysteem aanwezig zijn om gebruikers kunnen inloggen en ook
+			  een gastaccount aanmaken.
+			</p>
 		</div>
 
 		<div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
@@ -84,9 +85,12 @@ if($_SESSION['ingelogd'] == "Ja"){
 		</div>
 
 		<div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
-			<p>want to know more?</p>
+			<p>Meer weten?</p>
 			<q>
-				<a href="">use the source</a>, Luke!</q>
+				<a href="Landing.php">Probeer nu</a><?php
+				//Naam van gebruiker ophalen
+				echo "<h1>".$_SESSION['username']."</h1>";
+			?></q>
 		</div>
 
 		<div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
@@ -105,6 +109,9 @@ if($_SESSION['ingelogd'] == "Ja"){
 					<sup>*</sup>
 				</b>?</p>
 			<span class="footnote">* beat that, prezi ;)</span>
+			<span class="footnote">
+				<a href="landing.php">-Terug naar home</a>
+			</span>
 		</div>
 
 		<div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">

@@ -19,6 +19,13 @@ if($_SESSION['ingelogd'] == "Ja"){
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/nav.css">
 	<link rel="stylesheet" href="lib/animate.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slimmin.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="js/rad.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" />
+    <link href="css/rad.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -54,7 +61,9 @@ if($_SESSION['ingelogd'] == "Ja"){
 						<div class="link">Onderdeel 5</div>
 					</a>
 					<a href="Onderdeel6.php">
-						<div class="link">Onderdeel 6</div>
+						<div class="link">Onderdeel 6
+							-Rad van fortuin
+						</div>
 					</a>
 					<a href="Onderdeel7.php">
 						<div class="link">Onderdeel 7</div>
@@ -76,7 +85,38 @@ if($_SESSION['ingelogd'] == "Ja"){
 		<div id=content-container_2>
 			<!-- Inhoud hier -->
 			<h1>Onderdeel 6</h1>
-			
+			<div class="container" style="margin-top:100px;">
+        <table class="table text-center">
+            <tr>
+                <td colspan="2">
+                    <input id="btnSpinIt" type="submit" value="Spin It" class="input-sm form-control btn-success" onclick="SpinIt()">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="pointer"></div>
+                    <div id="rad" class="text-center"></div>
+                </td>
+                <td>
+                    <div class="pointer"></div>
+                    <div id="rad" class="text-center"></div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input id="btnClearIt" type="submit" value="Clear It" class="input-sm form-control btn-danger" onclick="ClearIt()">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="ipNumberRad1" type="text" class="input-sm form-control">
+                </td>
+                <td>
+                    <input id="ipNumberRad2" type="text" class="input-sm form-control">
+                </td>
+            </tr>
+        </table>
+    </div>
 		</div>
 
 

@@ -80,10 +80,16 @@ if($_SESSION['ingelogd'] == "Ja"){
 			<!-- Inhoud hier -->
 			<article id="over-ons_c">
 				<h1>Over ons</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut ero labore et dolore magna
-					aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco poriti laboris nisi ut aliquip ex ea commodo consequat.
-					Duis aute irure dolor in reprehenderit in uienply voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-					sint occaecat cupidatat norin proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<br>
+				<p>Wij zijn een groep studenten op mboRijnland van Applicatie
+					en- mediaontwikkeling<p>
+				<br>
+				<p>Project opdracht<br>
+Ons team heeft de opdracht gekregen van een docent logica, die les geeft op het mbo in leiden. Deze docent vroeg ons of we een website kunnen maken waar de volgende onderdelen in zitten; Een homepage waar je kan navigeren, en een welkomstbericht met nuttige informatie over de website. Verder moet er een Presentatiepagina komen, dit moet met JS geprogrammeerd zijn, in de presentatie moet kun je zien wat je allemaal met de website kunt doen.
+Verder moet er een rekenpagina en een pittige rekenpagina op hierop kan je de tafel van?, de machtreeks van ?, de breuken reeks van ? en de kwadraat reeks van ? vinden. op de pittige rekenpagina kan je de rij van Fibonacci zien en alle priemgetallen tot?.
+Op de andere pagina moet een shoot the pig spel komen.
+
+				</p>
 			</article>
 
 
@@ -155,7 +161,7 @@ if($_SESSION['ingelogd'] == "Ja"){
 	</section>
 
 	<div id="footer-container">
-		<a href="over-ons.php">Over ons</a>
+		<a href="over-ons.php">Over</a>
 		<a href='uitloggen.php'>Uitloggen</a>
 	</div>
 
