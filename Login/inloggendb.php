@@ -7,7 +7,6 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 	//Dit heeft de user ingevoerd
 	$ingevoerdeww = $_POST['password'];
 	$ingevoerduser = $_POST['username'];
-	$hasedpass = md5($ingevoerdeww);
 
 	require("dbconnect.php");
 
