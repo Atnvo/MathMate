@@ -6,7 +6,7 @@ function getRandom(min, max) {
 
 
 function SpinIt() {
-    rotation = getRandom(800, 4000);
+    rotation = getRandom(800, 5000);
     time = getRandom(5, 10);
 
     document.getElementById("rad").style.transform = "rotate(" + rotation + "deg)";
