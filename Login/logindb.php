@@ -123,7 +123,7 @@
 	<div class="animated bounceInUp" id="container-login">
 		<h1 id="login_tittle">Login Forumulier
 			<br>MathMate</h1>
-		<form method="post" action="inloggendb.php">
+		<form method="POST" action="inloggendb.php">
 			<table>
 				<tr>
 					<td>Username:</td>
@@ -143,7 +143,6 @@
 		<p>Geen acccount?
 			<button id="myBtn">Registreer</button>
 		</p>
-
 
 		<!-- The Modal -->
 		<div id="myModal" class="modal">

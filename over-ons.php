@@ -39,35 +39,46 @@ if($_SESSION['ingelogd'] == "Ja"){
 					</div>
 				</label>
 				<div class="menu">
-					<nav>
-						<a href="Landing.php">
-							<div class="link">Home</div>
-						</a>
-						<a href="Onderdeel2.php">
-							<div class="link">Wat kan ik</div>
-						</a>
-						<a href="Onderdeel3.php">
-							<div class="link">Onderdeel 3</div>
-						</a>
-						<a href="Onderdeel4.php">
-							<div class="link">Onderdeel 4</div>
-						</a>
-						<a href="Onderdeel5.php">
-							<div class="link">Onderdeel 5</div>
-						</a>
-						<a href="Onderdeel6.php">
-							<div class="link">Onderdeel 6</div>
-						</a>
-						<a href="Onderdeel7.php">
-							<div class="link">Onderdeel 7</div>
-						</a>
-						<a href="Onderdeel8.php">
-							<div class="link">Onderdeel 8</div>
-						</a>
-						<a href="over-ons.php">
-							<div class="link">Over ons</div>
-						</a>
-					</nav>
+				<nav>
+					<a href="Landing.php">
+						<div class="link">Home</div>
+					</a>
+					<a href="Onderdeel2.php">
+						<div class="link">
+							-Wat kan ik
+						</div>
+					</a>
+					<a href="Onderdeel3.php">
+						<div class="link">
+							-Rekenpagina
+						</div>
+					</a>
+					<a href="Onderdeel4.php">
+						<div class="link">
+							-Fibonacci, 
+							-Priemgetallen
+						</div>
+					</a>
+					<a href="Onderdeel5.php">
+						<div class="link">
+							-Omrekencalculator,
+							-Factorizer
+						</div>
+					</a>
+					<a href="Onderdeel6.php">
+						<div class="link">
+							-Rad van fortuin
+						</div>
+					</a>
+					<a href="Onderdeel7.php">
+						<div class="link">
+							- Shoot the pig
+						</div>
+					</a>
+					<a href="over-ons.php">
+						<div class="link">Over ons</div>
+					</a>
+				</nav>
 				</div>
 			</div>
 		</section>
