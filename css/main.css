@@ -150,6 +150,7 @@ body {
 	height: 80vh;
 	width: 80vw;
 	margin: auto;
+	z-index: 1;
 }
 
 .persoon-beschrijving {
@@ -190,6 +191,7 @@ body {
 #container-persoon {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
+	z-index: 2;
 }
 
 /* ------------------------------------------ */
