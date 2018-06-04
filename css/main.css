@@ -124,7 +124,7 @@ body {
 
 #header-container_c {
 	z-index: auto;
-	margin-left: 3em;
+	margin-left: 3.5em;
 	margin-top: 1em;
 	background-color: black;
 	width: 4.2em;
@@ -150,6 +150,7 @@ body {
 	height: 80vh;
 	width: 80vw;
 	margin: auto;
+	z-index: 1;
 }
 
 .persoon-beschrijving {
@@ -190,6 +191,7 @@ body {
 #container-persoon {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
+	z-index: 2;
 }
 
 /* ------------------------------------------ */

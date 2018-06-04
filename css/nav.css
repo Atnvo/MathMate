@@ -41,14 +41,15 @@
     }
 
     .menu{
-        margin-top: -1.5em;
         z-index: 1;
+        margin-top: -1.5em;
+        z-index: 10;
         position: absolute;
-        height: 70vh;
+        height: 60vh;
         width: 250px;
         background-color: #212021;
         transition: all .5s;
-        left: -310px;
+        left: -320px;
     }
 
     .menu1 {
@@ -86,7 +87,7 @@
     }
 
     #check:checked ~ .menu {
-        transform: translateX(375px);
+        transform: translateX(385px);
     }
 
     #check:checked ~ .menu1 {
