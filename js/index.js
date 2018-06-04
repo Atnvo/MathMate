@@ -9,15 +9,14 @@ impress().init();
 function Fibonacci() {
     var fib = [0, 1];
     var getalInput = document.getElementById("getalInput").value; //Getal eindz
+    document.getElementById("output").innerHTML = "";
 
     for (var i = fib.length; i < getalInput; i++) {
         fib[i] = fib[i - 2] + fib[i - 1];
     }
     console.log(fib);
-    document.getElementById("output").innerHTML += fib + "<br>";
+    document.getElementById("output").innerHTML = fib.join('<br>') + "<br>";
 }
-
-
 // ____________________________________________________________ Onderdeel 6 Rad
 
 var rotation, time;
