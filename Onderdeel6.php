@@ -25,7 +25,8 @@ if($_SESSION['ingelogd'] == "Ja"){
     <script src="js/rad.js"></script>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" />
-    <link href="css/rad.css" rel="stylesheet" />
+	<link href="css/rad.css" rel="stylesheet" />
+	<script src="js/index.js"></script>
 </head>
 
 <body>
