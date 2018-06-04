@@ -16,6 +16,7 @@ function Fibonacci() {
     }
     console.log(fib);
     document.getElementById("output").innerHTML = fib.join('<br>') + "<br>";
+    new SimpleBar(document.getElementById('output'))
 }
 // ____________________________________________________________ Onderdeel 6 Rad
 
