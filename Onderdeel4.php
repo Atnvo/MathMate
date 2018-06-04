@@ -87,10 +87,11 @@ if($_SESSION['ingelogd'] == "Ja"){
 	<section id="content-container">
 		<div id=content-container_2>
 			<!-- Inhoud hier -->
-			<h1>Onderdeel 4</h1>
+			<h1>[4] Fibonacci, Priemgetallen</h1>
 
-
-
+			<input type="text" id="getalInput">
+			<input type="submit" onclick="Fibonacci();" value="Bereken">
+			<div id="output"></div>
 		</div>
 
 
