@@ -4,19 +4,21 @@ if ("ontouchstart" in document.documentElement) {
 
 impress().init(); 
 
-// ____________________ Onderdeel 4 onder 
-
-var fib = [0, 1];
-var N = 23; //Getal eindz
+// ____________________________________________________________ Onderdeel 4 Fibbici priemgetallen
 
 function Fibonacci() {
-    for (var i = fib.length; i < N; i++) {
+    var fib = [0, 1];
+    var getalInput = document.getElementById("getalInput").value; //Getal eindz
+
+    for (var i = fib.length; i < getalInput; i++) {
         fib[i] = fib[i - 2] + fib[i - 1];
     }
+    console.log(fib);
+    document.getElementById("output").innerHTML += fib + "<br>";
 }
-console.log(fib);
 
-// ____________________ Onderdeel 6 Rad
+
+// ____________________________________________________________ Onderdeel 6 Rad
 
 var rotation, time;
 
