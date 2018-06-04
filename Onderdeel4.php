@@ -19,65 +19,66 @@ if($_SESSION['ingelogd'] == "Ja"){
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/nav.css">
 	<link rel="stylesheet" href="lib/animate.css">
+	<script src="js/index.js"></script>
 </head>
 
 <body>
 
 	<div class="animated fadeInLeft" id="header-container_c">
 		<section id="header-container">
-			<a href="Landing.php"><img id="header-img_logo" src="img/Logo-noback.png"></a>
+			<a href="Landing.php">
+				<img id="header-img_logo" src="img/Logo-noback.png">
+			</a>
 			<div id="topbar">
-			<input type="checkbox" id="check"/>
-			<label id="icon" for="check">
-				<!--icon-->
-				<div id="test">
-					<div class="bar1"></div>
-					<div class="bar2"></div>	
-					<div class="bar3"></div>
+				<input type="checkbox" id="check" />
+				<label id="icon" for="check">
+					<!--icon-->
+					<div id="test">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+						<div class="bar3"></div>
+					</div>
+				</label>
+				<div class="menu">
+					<nav>
+						<a href="Landing.php">
+							<div class="link">Home</div>
+						</a>
+						<a href="Onderdeel2.php">
+							<div class="link">
+								-Wat kan ik
+							</div>
+						</a>
+						<a href="Onderdeel3.php">
+							<div class="link">
+								-Rekenpagina
+							</div>
+						</a>
+						<a href="Onderdeel4.php">
+							<div class="link">
+								-Fibonacci, -Priemgetallen
+							</div>
+						</a>
+						<a href="Onderdeel5.php">
+							<div class="link">
+								-Omrekencalculator, -Factorizer
+							</div>
+						</a>
+						<a href="Onderdeel6.php">
+							<div class="link">
+								-Rad van fortuin
+							</div>
+						</a>
+						<a href="Onderdeel7.php">
+							<div class="link">
+								- Shoot the pig
+							</div>
+						</a>
+						<a href="over-ons.php">
+							<div class="link">Over ons</div>
+						</a>
+					</nav>
 				</div>
-			</label>
-			<div class="menu">
-			<nav>
-					<a href="Landing.php">
-						<div class="link">Home</div>
-					</a>
-					<a href="Onderdeel2.php">
-						<div class="link">
-							-Wat kan ik
-						</div>
-					</a>
-					<a href="Onderdeel3.php">
-						<div class="link">
-							-Rekenpagina
-						</div>
-					</a>
-					<a href="Onderdeel4.php">
-						<div class="link">
-							-Fibonacci, 
-							-Priemgetallen
-						</div>
-					</a>
-					<a href="Onderdeel5.php">
-						<div class="link">
-							-Omrekencalculator,
-							-Factorizer
-						</div>
-					</a>
-					<a href="Onderdeel6.php">
-						<div class="link">
-							-Rad van fortuin
-						</div>
-					</a>
-					<a href="Onderdeel7.php">
-						<div class="link">
-							- Shoot the pig
-						</div>
-					</a>
-					<a href="over-ons.php">
-						<div class="link">Over ons</div>
-					</a>
-				</nav>
-			</div>
 			</div>
 		</section>
 	</div>
@@ -86,8 +87,11 @@ if($_SESSION['ingelogd'] == "Ja"){
 	<section id="content-container">
 		<div id=content-container_2>
 			<!-- Inhoud hier -->
-			<h1>Onderdeel 4</h1>
-			
+			<h1>[4] Fibonacci, Priemgetallen</h1>
+
+			<input type="text" id="getalInput">
+			<input type="submit" onclick="Fibonacci();" value="Bereken">
+			<div id="output"></div>
 		</div>
 
 
@@ -97,8 +101,7 @@ if($_SESSION['ingelogd'] == "Ja"){
 		<a href="over-ons.php">Over ons</a>
 		<a href='uitloggen.php'>Uitloggen</a>
 	</div>
-
+	<script src="js/index.js"></script>
 </body>
 
 </html>
-
