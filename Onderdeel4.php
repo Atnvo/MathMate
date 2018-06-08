@@ -20,6 +20,8 @@ if($_SESSION['ingelogd'] == "Ja"){
 	<link rel="stylesheet" href="css/nav.css">
 	<link rel="stylesheet" href="lib/animate.css">
 	<script src="js/index.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+	<script src="https://unpkg.com/simplebar@latest/dist/simplebar.js"></script>
 </head>
 
 <body>
@@ -89,9 +91,18 @@ if($_SESSION['ingelogd'] == "Ja"){
 			<!-- Inhoud hier -->
 			<h1>[4] Fibonacci, Priemgetallen</h1>
 
-			<input type="text" id="getalInput">
-			<input type="submit" onclick="Fibonacci();" value="Bereken">
-			<div id="output"></div>
+			<div id="Fibonacci">
+				<h1>Fibonacci</h1>
+				<input type="text" id="getalInput">
+				<input type="submit" onclick="Fibonacci();" value="Bereken">
+				<div id="outputF"</div>
+			</div>
+
+			<!-- <div>
+				<input type="text" id="">
+				<input type="text" onclick="">
+				<div id="outputP">
+			</div> -->
 		</div>
 
 
