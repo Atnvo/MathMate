@@ -84,7 +84,7 @@ if($_SESSION['ingelogd'] == "Ja"){
 			</div>
 		</section>
 
-		<section id="particles-js"></section>
+	<div id="img-background"></div>
 		
 		<section class="animated pulse" id="L_tittle-container">
 			<h1>MathMate</h1>
@@ -98,14 +98,12 @@ if($_SESSION['ingelogd'] == "Ja"){
 			MathMate is een website waarbij je rekensommen online kan berekenen, je kan Priemfactoren,
 			Omrekencalculator van decimaal en hexidecimaal en meer.</p>
 			</div>
+</section>
 
-
-	<footer>
+	<footer id="footer-nav">
 		<a href='uitloggen.php'><button>Uitloggen</button></a>
 		<a id="link over ons" href="over-ons.php">Over ons</a>
 	</footer>
-
-	<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 	<script src="lib/particles.js"></script>
 </body>
 

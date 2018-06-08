@@ -92,10 +92,17 @@ if($_SESSION['ingelogd'] == "Ja"){
 			<h1>[4] Fibonacci, Priemgetallen</h1>
 
 			<div id="Fibonacci">
+				<h1>Fibonacci</h1>
 				<input type="text" id="getalInput">
 				<input type="submit" onclick="Fibonacci();" value="Bereken">
-				<div id="output"></div>
+				<div id="outputF"</div>
 			</div>
+
+			<!-- <div>
+				<input type="text" id="">
+				<input type="text" onclick="">
+				<div id="outputP">
+			</div> -->
 		</div>
 
 
