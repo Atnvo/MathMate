@@ -95,7 +95,7 @@ if($_SESSION['ingelogd'] == "Ja"){
 				<h1>Fibonacci</h1>
 				<input type="text" id="getalInput">
 				<input type="submit" onclick="Fibonacci();" value="Bereken">
-				<div id="outputF"</div>
+				<div id="output"</div>
 			</div>
 
 			<!-- <div>
