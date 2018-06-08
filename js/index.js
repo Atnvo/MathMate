@@ -9,14 +9,14 @@ impress().init();
 function Fibonacci() {
     var fib = [0, 1];
     var getalInput = document.getElementById("getalInput").value; //Getal eindz
-    document.getElementById("outputF").innerHTML = "";
+    document.getElementById("output").innerHTML = "";
 
     for (var i = fib.length; i < getalInput; i++) {
         fib[i] = fib[i - 2] + fib[i - 1];
     }
     console.log(fib);
-    document.getElementById("outputF").innerHTML = fib.join('<br>') + "<br>";
-    new SimpleBar(document.getElementById('outputF'))
+    document.getElementById("output").innerHTML = fib.join('<br>') + "<br>";
+    new SimpleBar(document.getElementById('output'))
 }
 // ____________________________________________________________ Onderdeel 6 Rad
 
