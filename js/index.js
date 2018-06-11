@@ -6,15 +6,32 @@ impress().init();
 
 // ____________________________________________________________ Onderdeel 4 Fibbici priemgetallen
 
-function Fibonacci() {
-    var fib = [0, 1];
-    var getalInput = document.getElementById("getalInput").value; //Getal eindz
-    document.getElementById("output").innerHTML = "";
 
-    for (var i = fib.length; i < getalInput; i++) {
-        fib[i] = fib[i - 2] + fib[i - 1];
-    }
-    console.log(fib);
+function Fibonacci() {
+    var fib = new Array();
+    fib[0] = 0;
+    fib[1] = 1;
+        // Set answer variable
+        answer = "";
+        // Set maximum for maximum calculation
+        var until = document.getElementById('getalInput').value;
+        if (until < 1000) {
+            answer += fib[0] + ", " + fib[1];
+    
+            // Calculate fill array until 'until'
+            for(i=2; i < until; i++){
+                fib[i] = fib[i-2] + fib[i-1];
+                if (fib[i] <= until){
+                    answer += ", " + fib[i];
+                }
+            }
+        } 
+        // If ultil > 1000
+        else {
+            answer = "Je hebt het maximum overschreden";
+        }
+        // Fill antwoorden div in fibbonacci.html
+
     document.getElementById("output").innerHTML = fib.join('<br>') + "<br>";
     new SimpleBar(document.getElementById('output'))
 }

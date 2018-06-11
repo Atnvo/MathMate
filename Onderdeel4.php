@@ -90,7 +90,7 @@ if($_SESSION['ingelogd'] == "Ja"){
 		<div id=content-container_2>
 			<!-- Inhoud hier -->
 			<h1>[4] Fibonacci, Priemgetallen</h1>
-
+			<br>
 			<div id="Fibonacci">
 				<h1>Fibonacci</h1>
 				<input type="text" id="getalInput">
