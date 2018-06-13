@@ -11,29 +11,24 @@ function Fibonacci() {
     var fib = new Array();
     fib[0] = 0;
     fib[1] = 1;
-        // Set answer variable
+        //zet d
         answer = "";
-        // Set maximum for maximum calculation
-        var until = document.getElementById('getalInput').value;
+        // Pakt de maximale aantal dat je wilt berekenen
+        var until = document.getElementById("getalInput").value;
         if (until < 1000) {
-            answer += fib[0] + ", " + fib[1];
-    
-            // Calculate fill array until 'until'
+            answer += fib[0] + "<br>" + fib[1];
+            
+            //Fibonacci Berekening
             for(i=2; i < until; i++){
                 fib[i] = fib[i-2] + fib[i-1];
                 if (fib[i] <= until){
-                    answer += ", " + fib[i];
+                    answer += "<br>" + fib[i];
                 }
             }
         } 
-        // If ultil > 1000
-        else {
-            answer = "Je hebt het maximum overschreden";
-        }
-        // Fill antwoorden div in fibbonacci.html
-
-    document.getElementById("output").innerHTML = fib.join('<br>') + "<br>";
-    new SimpleBar(document.getElementById('output'))
+        
+    document.getElementById("output").innerHTML = answer; //Geeft Uitslag gevens neer
+    new SimpleBar(document.getElementById('output'))      //Maakt een scroll bar aan
 }
 // ____________________________________________________________ Onderdeel 6 Rad
 
