@@ -68,7 +68,7 @@ if($_SESSION['ingelogd'] == "Ja"){
 				<b>tiny</b> ideas</p>
 		</div>
 
-		<div id="its" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
+		<div id="its" class="step" data-x="3400" data-y="-850" data-rotate="270" data-scale="6" data-rotate-x="-20" data-rotate-y="40">
 			<p>
 			Een logica docent van mboRijnland heeft ons ingeschakeld om een rekensom
 			 website maken die enkele rekensommen kan berekenen, daarnaast moest er 

@@ -23,7 +23,7 @@ if($_SESSION['ingelogd'] == "Ja"){
 
 <body>
 	
-	<section id="h_container">
+	<section id="h_container" style="box-shadow: 0px 0px 30px -15px;">
 		
 		<section class="animated fadeInDown" id="header">
 			<div id="h_nav-c">
