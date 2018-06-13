@@ -121,10 +121,10 @@ body {
 	margin-left: .7em;
 }
 
-#output {
+#outputF {
 	padding: .5%;
 	width: 13rem;
-	height: 80vh;
+	height: 40vh;
 	overflow-y: hidden;
 }
 

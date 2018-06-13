@@ -14,7 +14,7 @@ function Fibonacci() {
         //zet d
         answer = "";
         // Pakt de maximale aantal dat je wilt berekenen
-        var until = document.getElementById("getalInput").value;
+        var until = document.getElementById("getalInputF").value;
         if (until < 1000) {
             answer += fib[0] + "<br>" + fib[1];
             
@@ -27,9 +27,16 @@ function Fibonacci() {
             }
         } 
         
-    document.getElementById("output").innerHTML = answer; //Geeft Uitslag gevens neer
-    new SimpleBar(document.getElementById('output'))      //Maakt een scroll bar aan
+    document.getElementById("outputF").innerHTML = answer; //Geeft Uitslag gevens neer
+    new SimpleBar(document.getElementById('outputF'));     //Maakt een scroll bar aan
 }
+
+function Priem() {
+    var getalInputP = document.getElementById("getalInputP").value;
+    
+}
+
+
 // ____________________________________________________________ Onderdeel 6 Rad
 
 var rotation, time;
