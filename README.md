@@ -17,4 +17,8 @@ Tot slot moet de website beveiligd zijn met een wachtwoord plus ook nog een gast
 
 
 ##Vergelijkbare websites
+
+###Alavi
+1. Sterkte punten
 ..* test
+2. Zwakte punten
