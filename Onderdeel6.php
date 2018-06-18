@@ -109,7 +109,7 @@ if($_SESSION['ingelogd'] == "Ja"){
                 </td>
                 <td>
                     <div class="pointer"></div>
-                    <div id="rad" class="text-center"></div>
+                    <div id="rad2" class="text-center"></div>
                 </td>
             </tr>
             <tr>
@@ -125,6 +125,11 @@ if($_SESSION['ingelogd'] == "Ja"){
                     <input id="ipNumberRad2" type="text" class="input-sm form-control">
                 </td>
             </tr>
+			<tr>
+				<td>
+					<input id="" type="submit" val>
+				</td>
+			</tr>
         </table>
     </div>
 		</div>

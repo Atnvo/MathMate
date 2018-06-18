@@ -6,15 +6,44 @@ impress().init();
 
 // ____________________________________________________________ Onderdeel 4 Fibbici priemgetallen
 
+// Fibonacci reeks
 function Fibonacci() {
-    var fib = [0, 1];
-    var getalInput = document.getElementById("getalInput").value; //Getal eindz
+    var fib = new Array();
+    fib[0] = 0;
+    fib[1] = 1;
+        //zet d
+        answer = "";
+        // Pakt de maximale aantal dat je wilt berekenen
+        var until = document.getElementById("getalInputF").value;
+        if (until < 1000) {
+            answer += fib[0] + "<br>" + fib[1];
+            
+            //Fibonacci Berekening
+            for(i=2; i < until; i++){
+                fib[i] = fib[i-2] + fib[i-1];
+                if (fib[i] <= until){
+                    answer += "<br>" + fib[i];
+                }
+            }
+        } 
+        
+    document.getElementById("outputF").innerHTML = answer; //Geeft Uitslag gevens neer
+    new SimpleBar(document.getElementById('outputF'));     //Maakt een scroll bar aan
+}
 
-    for (var i = fib.length; i < getalInput; i++) {
-        fib[i] = fib[i - 2] + fib[i - 1];
+// Priemgetallen reeks
+function Priem() {
+
+    var antwroord;
+
+    var getalInputP = document.getElementById("getalInputP").value;
+    if(reeks < getalInputP) {
+        var reeks = [2, 3, 5, 7, 11, 15, 17, 19, 21, 23, 25]; 
+    }else {
+        
     }
-    console.log(fib);
-    document.getElementById("output").innerHTML += fib + "<br>";
+
+    document.getElementById("outputP").innerHTML = antwoord;
 }
 
 
@@ -29,12 +58,17 @@ function getRandom(min, max) {
 
 function SpinIt() {
     rotation = getRandom(800, 4000);
+    rotation2 = getRandom(800, 4000);
     time = getRandom(5, 10);
 
     document.getElementById("rad").style.transform = "rotate(" + rotation + "deg)";
     document.getElementById("rad").style.transition = "transform " + time + "s";
 
+    document.getElementById("rad2").style.transform = "rotate(" + rotation2 + "deg)";
+    document.getElementById("rad2").style.transition = "transform " + time + "s";
+
     setTimeout(function () { getNumber(rotation); }, (time * 1000));
+    setTimeout(function () { getNumber2(rotation2); }, (time * 1000));
 }
 
 function getNumber(x) {
@@ -54,4 +88,23 @@ function getNumber(x) {
         document.getElementById("ipNumberRad1").value = "1";
     }
 }
+
+function getNumber2(x) {
+    x = x % 360;
+
+    if ((x >= 30) && (x <= 89)) {
+        document.getElementById("ipNumberRad2").value = "6";
+    } else if ((x >= 90) && (x <= 149)) {
+        document.getElementById("ipNumberRad2").value = "5";
+    } else if ((x >= 150) && (x <= 209)) {
+        document.getElementById("ipNumberRad2").value = "4";
+    } else if ((x >= 210) && (x <= 269)) {
+        document.getElementById("ipNumberRad2").value = "3";
+    } else if ((x >= 270) && (x <= 329)) {
+        document.getElementById("ipNumberRad2").value = "2";
+    } else {
+        document.getElementById("ipNumberRad2").value = "1";
+    }
+}
+
 

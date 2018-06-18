@@ -114,7 +114,7 @@ Op de andere pagina moet een shoot the pig spel komen.
 						<!-- Naam persoon -->
 						<h2>Alavi</h2>
 						<!-- Beschrijving / tittle -->
-						<p>Developer</p>
+						<p>Web Developer</p>
 					</article>
 				</div>
 			</section>
