@@ -1,0 +1,59 @@
+﻿#dFrame {
+    margin:50px auto;
+    height: 800px;
+    width: 80%;
+    border: 1px silver dashed;
+}
+
+#iShoot {
+    position: absolute;
+    margin: 5px 0 0 5px;
+    cursor:pointer;
+}
+
+#iShoot:hover {
+    -webkit-animation-name: rotate;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+#dMountain {
+    position: absolute;
+    margin-top: 99px;
+    height: 700px;
+    width: 356px;
+    background-image: url('../img/mountain.png');
+}
+
+#dCannon {
+    position: absolute;
+    margin: 126px 0 0 266px;
+    height: 56px;
+    width: 75px;
+    background-image: url('../img/cannon.png');
+    z-index: 1;
+}
+
+#dCannonball {
+    position: absolute;
+    margin: 117px 0 0 326px;
+    display: none;
+    width: 30px;
+    height:28px;
+    background-image: url('../img/cannonball.png');
+    z-index: 1;
+}
+
+
+
