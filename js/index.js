@@ -6,7 +6,7 @@ impress().init();
 
 // ____________________________________________________________ Onderdeel 4 Fibbici priemgetallen
 
-
+// Fibonacci reeks
 function Fibonacci() {
     var fib = new Array();
     fib[0] = 0;
@@ -31,9 +31,19 @@ function Fibonacci() {
     new SimpleBar(document.getElementById('outputF'));     //Maakt een scroll bar aan
 }
 
+// Priemgetallen reeks
 function Priem() {
+
+    var antwroord;
+
     var getalInputP = document.getElementById("getalInputP").value;
-    
+    if(reeks < getalInputP) {
+        var reeks = [2, 3, 5, 7, 11, 15, 17, 19, 21, 23, 25]; 
+    }else {
+        
+    }
+
+    document.getElementById("outputP").innerHTML = antwoord;
 }
 
 
