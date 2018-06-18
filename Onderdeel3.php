@@ -87,6 +87,7 @@ if($_SESSION['ingelogd'] == "Ja"){
 		<div id=content-container_2>
 			<!-- Inhoud hier -->
 			<h1>Onderdeel 3</h1>
+			<h2>Natas</h2>
 			
 		</div>
 
