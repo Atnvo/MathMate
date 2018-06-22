@@ -1,4 +1,5 @@
 <?php
+
 //Dit is de versie met database connectie
 
 //Check of er een POST is gedaan naar deze pagina

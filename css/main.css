@@ -213,6 +213,21 @@ footer {
 	margin-top: 18em;
 }
 
+#container-4 {
+	width: 90vw;
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+}
+
+#Fibonacci {
+	width: 20vw; 
+	height: 200px;
+}
+#priem {
+	width: 20vw;
+	height: 200px;
+}
+
 /* Smartphones (portrait and landscape) ----------- */
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
