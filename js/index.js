@@ -21,29 +21,32 @@ function Fibonacci() {
             //Fibonacci Berekening
             for(i=2; i < until; i++){
                 fib[i] = fib[i-2] + fib[i-1];
-                if (fib[i] <= until){
+                if (fib[i] <= until){ // gaat berekening door totdat het de variable "untill" heeft breikt wat de eind getal de gebruiker heeft ingevoerd.
                     answer += "<br>" + fib[i];
                 }
             }
+        }else{
+            answer = "Getal is te hoog."
         } 
-        
+    
     document.getElementById("outputF").innerHTML = answer; //Geeft Uitslag gevens neer
     new SimpleBar(document.getElementById('outputF'));     //Maakt een scroll bar aan
 }
 
-// Priemgetallen reeks
+// Priemgetallen
 function Priem() {
-
-    var antwroord;
-
-    var getalInputP = document.getElementById("getalInputP").value;
-    if(reeks < getalInputP) {
-        var reeks = [2, 3, 5, 7, 11, 15, 17, 19, 21, 23, 25]; 
-    }else {
-        
+    var getalmax = document.getElementById('getalInputP').value;
+    var sieve = [], i, j, priemgetallen = [];
+    for (i = 2; i <= getalmax; ++i) {
+        if (!sieve[i]) {
+            priemgetallen.push(i);
+            for (j = i << 1; j <= getalmax; j += i) {
+                sieve[j] = true;
+            }
+        }
     }
-
-    document.getElementById("outputP").innerHTML = antwoord;
+    document.getElementById('outputP').innerHTML = priemgetallen ;
+    new SimpleBar(document.getElementById('outputP'));
 }
 
 

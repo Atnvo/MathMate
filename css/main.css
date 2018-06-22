@@ -102,7 +102,7 @@ body {
 
 #header-container_c {
 	z-index: auto;
-	margin-left: 3em;
+	margin-left: 3.5em;
 	margin-top: 1em;
 	background-color: black;
 	width: 4.2em;
@@ -211,6 +211,21 @@ body {
 
 footer {
 	margin-top: 18em;
+}
+
+#container-4 {
+	width: 90vw;
+	display: grid;
+	grid-template-columns: repeat(2, auto);
+}
+
+#Fibonacci {
+	width: 20vw; 
+	height: 200px;
+}
+#priem {
+	width: 20vw;
+	height: 200px;
 }
 
 /* Smartphones (portrait and landscape) ----------- */
