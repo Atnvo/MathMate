@@ -6,7 +6,7 @@ impress().init();
 
 // ____________________________________________________________ Onderdeel 4 Fibbici priemgetallen
 
-
+// Fibonacci reeks
 function Fibonacci() {
     var fib = new Array();
     fib[0] = 0;
@@ -14,22 +14,42 @@ function Fibonacci() {
         //zet d
         answer = "";
         // Pakt de maximale aantal dat je wilt berekenen
-        var until = document.getElementById("getalInput").value;
+        var until = document.getElementById("getalInputF").value;
         if (until < 1000) {
             answer += fib[0] + "<br>" + fib[1];
             
             //Fibonacci Berekening
             for(i=2; i < until; i++){
                 fib[i] = fib[i-2] + fib[i-1];
-                if (fib[i] <= until){
+                if (fib[i] <= until){ // gaat berekening door totdat het de variable "untill" heeft breikt wat de eind getal de gebruiker heeft ingevoerd.
                     answer += "<br>" + fib[i];
                 }
             }
+        }else{
+            answer = "Getal is te hoog."
         } 
-        
-    document.getElementById("output").innerHTML = answer; //Geeft Uitslag gevens neer
-    new SimpleBar(document.getElementById('output'))      //Maakt een scroll bar aan
+    
+    document.getElementById("outputF").innerHTML = answer; //Geeft Uitslag gevens neer
+    new SimpleBar(document.getElementById('outputF'));     //Maakt een scroll bar aan
 }
+
+// Priemgetallen
+function Priem() {
+    var getalmax = document.getElementById('getalInputP').value;
+    var sieve = [], i, j, priemgetallen = [];
+    for (i = 2; i <= getalmax; ++i) {
+        if (!sieve[i]) {
+            priemgetallen.push(i);
+            for (j = i << 1; j <= getalmax; j += i) {
+                sieve[j] = true;
+            }
+        }
+    }
+    document.getElementById('outputP').innerHTML = priemgetallen ;
+    new SimpleBar(document.getElementById('outputP'));
+}
+
+
 // ____________________________________________________________ Onderdeel 6 Rad
 
 var rotation, time;

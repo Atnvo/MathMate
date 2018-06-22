@@ -15,11 +15,12 @@ if($_SESSION['ingelogd'] == "Ja"){
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="author" content="Alavi van Oosterhout">
 	<meta name="description" content="Landing page MathMate">
-	<title>π|Onderdeel 2</title>
+	<title>π|Fibonacci & Priemgetallen</title>
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/nav.css">
 	<link rel="stylesheet" href="lib/animate.css">
 	<script src="js/index.js"></script>
+	<!-- Simplebar links -->
 	<link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
 	<script src="https://unpkg.com/simplebar@latest/dist/simplebar.js"></script>
 </head>
@@ -91,19 +92,27 @@ if($_SESSION['ingelogd'] == "Ja"){
 			<!-- Inhoud hier -->
 			<h1>[4] Fibonacci, Priemgetallen</h1>
 			<br>
-			<div id="Fibonacci">
-				<h1>Fibonacci</h1>
-				<input type="text" id="getalInput">
-				<input type="submit" onclick="Fibonacci();" value="Bereken">
-				<div id="output"</div>
-			</div>
 
-			<!-- <div>
-				<input type="text" id="">
-				<input type="text" onclick="">
-				<div id="outputP">
-			</div> -->
-		</div>
+			<section id="container-4">
+
+				<!-- Fibonacci -->
+				<div id="Fibonacci">
+					<h1>Fibonacci</h1>
+					<input type="text" id="getalInputF">
+					<input type="submit" onclick="Fibonacci();" value="Bereken">
+					<div id="outputF" </div>
+				</div>
+
+				<!-- Priemgetallen -->
+				<div id="priem">
+					<h1>Priemgetallen</h1>
+					<input type="text" id="getalInputP">
+					<input type="submit" onclick="Priem();" value="Bereken">
+					<div id="outputP">
+					</div>
+				</div>
+
+			</section>
 
 
 	</section>
