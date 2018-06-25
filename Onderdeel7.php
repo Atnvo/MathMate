@@ -19,6 +19,13 @@ if($_SESSION['ingelogd'] == "Ja"){
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/nav.css">
 	<link rel="stylesheet" href="lib/animate.css">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" />
+    <link href="css/stp.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -88,6 +95,14 @@ if($_SESSION['ingelogd'] == "Ja"){
 			<!-- Inhoud hier -->
 			<h1>Onderdeel 7</h1>
 			
+			<div id="dFrame">
+        <img src="img/shoot.png" id="iShoot" onclick="fire()"/>
+        <div id="dCannonball"></div>
+        <div id="dCannon"></div>
+        <div id="dMountain"></div>
+        <div id="dPig"></div>
+    </div>
+
 		</div>
 
 
