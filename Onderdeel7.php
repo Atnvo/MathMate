@@ -100,6 +100,7 @@ if($_SESSION['ingelogd'] == "Ja"){
         <div id="dCannonball"></div>
         <div id="dCannon"></div>
         <div id="dMountain"></div>
+        <div id="dPig"></div>
     </div>
 
 		</div>
