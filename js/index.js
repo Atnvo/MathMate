@@ -33,22 +33,36 @@ function Fibonacci() {
     new SimpleBar(document.getElementById('outputF'));     //Maakt een scroll bar aan
 }
 
-// Priemgetallen
-function Priem() {
-    var getalmax = document.getElementById('getalInputP').value;
-    var sieve = [], i, j, priemgetallen = [];
-    for (i = 2; i <= getalmax; ++i) {
-        if (!sieve[i]) {
-            priemgetallen.push(i);
-            for (j = i << 1; j <= getalmax; j += i) {
-                sieve[j] = true;
+function calcPrimes() {
+    //D.m.v een for-loop doorlopen we alle getallen van 2 t/m 100. Wij gaan controlen welke getalen
+    //priemgetallen zijn.
+    for (var i = 2; i <= 100; i++) {
+
+        //Variabele 'IsPrime' is een type boolean en de waarde hiervan is true. 
+        //Wij gaan ervan uit dat alle getallen tussen de 2 en 100 priemgetallen zijn.
+        var IsPrime = true;
+
+        //Wij maken een tweede for-loop (een loop in een loop), hiermee gaan wij controlen of de
+        //waarde van variabele i deelbaar is door zijn voorgaan de getallen, als:
+        //i 5 is, dan wordt gecontroleerd of i % 2, i % 3 en i % 4 een 0 oplevert.
+        for (var x = 2; x < i; x++) {
+
+            //Als dat het geval is, dan is i deelbaar door 2, 3 of 4.
+            //En is daarom GEEN priemgetal.
+            if (i % x == 0) {
+                //Als de waarde van variabele i GEEN priemgetal is, dan wordt variabele 'IsPrime' op false gezet.
+                IsPrime = false;
             }
         }
-    }
-    document.getElementById('outputP').innerHTML = priemgetallen ;
-    new SimpleBar(document.getElementById('outputP'));
-}
 
+        //Als de waarde van variabele i een priemgetal is, dan wordt de waarde variabele 'i' aan div 'dPrimes' toegevoegd
+        //en anders niet.
+        if (IsPrime == true) {
+            document.getElementById('outputP').innerHTML += i + "<br />";
+            new SimpleBar(document.getElementById('outputP')); 
+        }
+    }
+}
 
 // ____________________________________________________________ Onderdeel 6 Rad
 

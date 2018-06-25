@@ -107,7 +107,7 @@ if($_SESSION['ingelogd'] == "Ja"){
 				<div id="priem">
 					<h1>Priemgetallen</h1>
 					<input type="text" id="getalInputP">
-					<input type="submit" onclick="Priem();" value="Bereken">
+					<input type="submit" onclick="calcPrimes();" value="Bereken">
 					<div id="outputP">
 					</div>
 				</div>
