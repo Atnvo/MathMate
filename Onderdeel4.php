@@ -118,8 +118,11 @@ if($_SESSION['ingelogd'] == "Ja"){
 	</section>
 
 	<div id="footer-container">
-		<a href="over-ons.php">Over ons</a>
-		<a href='uitloggen.php'>Uitloggen</a>
+		<div>
+			<a href="over-ons.php">Over ons</a>
+			<a href='uitloggen.php'>Uitloggen</a>
+		</div>
+		<p id="auther">Gemaakt door: Alavi</p>
 	</div>
 	<script src="js/index.js"></script>
 </body>
