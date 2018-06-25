@@ -128,6 +128,11 @@ body {
 	overflow-y: hidden;
 }
 
+#outputP {
+	height: 30vh;
+	width: 13rem;
+}
+
 #footer-nav {
 	margin-top: 37.5vh;
 }
