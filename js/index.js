@@ -30,7 +30,6 @@ function Fibonacci() {
         } 
     
     document.getElementById("outputF").innerHTML = answer; //Geeft Uitslag gevens neer
-    new SimpleBar(document.getElementById('outputF'));     //Maakt een scroll bar aan
 }
 
 function calcPrimes() {
@@ -59,9 +58,9 @@ function calcPrimes() {
         //en anders niet.
         if (IsPrime == true) {
             document.getElementById('outputP').innerHTML += i + "<br />";
-            new SimpleBar(document.getElementById('outputP')); 
         }
     }
+    new SimpleBar(document.getElementById('outputF'));
 }
 
 // ____________________________________________________________ Onderdeel 6 Rad

@@ -102,10 +102,10 @@ body {
 
 #header-container_c {
 	z-index: auto;
-	margin-left: 3.5em;
+	margin-left: 3em;
 	margin-top: 1em;
 	background-color: black;
-	width: 4.2em;
+	width: 3.5em;
 	height: 97vh;
 	border-radius: 2%;
 }
@@ -185,7 +185,7 @@ body {
 
 #container-persoon {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
 	z-index: 2;
 }
 
@@ -208,11 +208,13 @@ body {
 }
 
 #footer-container {
-	width: 10vw;
+	width: 85vw;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: repeat(2, auto);
 	margin-left: 8em;
 }
+
+#auther {justify-self: end;}
 
 footer {
 	margin-top: 18em;
