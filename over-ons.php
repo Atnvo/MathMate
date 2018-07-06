@@ -158,8 +158,11 @@ Op de andere pagina moet een shoot the pig spel komen.
 	</section>
 
 	<div id="footer-container">
-		<a href="over-ons.php">Over</a>
-		<a href='uitloggen.php'>Uitloggen</a>
+		<div>
+			<a href="over-ons.php">Over ons</a>
+			<a href='uitloggen.php'>Uitloggen</a>
+		</div>
+		<p id="auther">Gemaakt door: Alavi</p>
 	</div>
 
 	</section>
