@@ -135,12 +135,12 @@ Op de andere pagina moet een shoot the pig spel komen.
 					</article>
 				</div>
 			</section>
-
+   
 			<!-- Persoon -->
 			<section>
 				<div>
 					<a class="persoon-website" href="" target="_blank"><img src="img/browser.png"></a>
-					<!-- Foto persoon -->
+					<!-- Foto persoon --> 
 					<img class="photo-persoon" src="img/persoon/blank.png">
 					<article class="persoon-beschrijving">
 						<!-- Naam persoon -->
@@ -151,20 +151,6 @@ Op de andere pagina moet een shoot the pig spel komen.
 				</div>
 			</section>
 
-			<!-- Persoon -->
-			<section>
-				<div>
-					<a class="persoon-website" href="" target="_blank"><img src="img/browser.png"></a>
-					<!-- Foto persoon -->
-					<img class="photo-persoon" src="img/persoon/blank.png">
-					<article class="persoon-beschrijving">
-						<!-- Naam persoon -->
-						<h2>Text</h2>
-						<!-- Beschrijving / tittle -->
-						<p>Text</p>
-					</article>
-				</div>
-			</section>
 </div>
 </div>
 
@@ -172,8 +158,11 @@ Op de andere pagina moet een shoot the pig spel komen.
 	</section>
 
 	<div id="footer-container">
-		<a href="over-ons.php">Over</a>
-		<a href='uitloggen.php'>Uitloggen</a>
+		<div>
+			<a href="over-ons.php">Over ons</a>
+			<a href='uitloggen.php'>Uitloggen</a>
+		</div>
+		<p id="auther">Gemaakt door: Alavi</p>
 	</div>
 
 	</section>

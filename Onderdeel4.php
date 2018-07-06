@@ -107,7 +107,7 @@ if($_SESSION['ingelogd'] == "Ja"){
 				<div id="priem">
 					<h1>Priemgetallen</h1>
 					<input type="text" id="getalInputP">
-					<input type="submit" onclick="Priem();" value="Bereken">
+					<input type="submit" onclick="calcPrimes();" value="Bereken">
 					<div id="outputP">
 					</div>
 				</div>
@@ -118,8 +118,11 @@ if($_SESSION['ingelogd'] == "Ja"){
 	</section>
 
 	<div id="footer-container">
-		<a href="over-ons.php">Over ons</a>
-		<a href='uitloggen.php'>Uitloggen</a>
+		<div>
+			<a href="over-ons.php">Over ons</a>
+			<a href='uitloggen.php'>Uitloggen</a>
+		</div>
+		<p id="auther">Gemaakt door: Alavi</p>
 	</div>
 	<script src="js/index.js"></script>
 </body>

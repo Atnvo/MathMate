@@ -23,7 +23,7 @@
 
     #test1 {
         margin-top: -4.5em;
-        margin-left: 5em;
+        margin-left: 4em;
         align-self: end;
         z-index: 1;
     }
@@ -45,7 +45,7 @@
         margin-top: -1.5em;
         z-index: 10;
         position: absolute;
-        height: 60vh;
+        height: 70vh;
         width: 250px;
         background-color: #212021;
         transition: all .5s;
