@@ -1,8 +1,8 @@
-if ("ontouchstart" in document.documentElement) { 
+if ("ontouchstart" in document.documentElement) {
     document.querySelector(".hint").innerphp = "<p>Tap on the left or right to navigate</p>";
 }
 
-impress().init(); 
+impress().init();
 
 // ____________________________________________________________ Onderdeel 4 Fibbici priemgetallen
 
@@ -11,57 +11,49 @@ function Fibonacci() {
     var fib = new Array();
     fib[0] = 0;
     fib[1] = 1;
-        //zet d
-        answer = "";
-        // Pakt de maximale aantal dat je wilt berekenen
-        var until = document.getElementById("getalInputF").value;
-        if (until < 1000) {
-            answer += fib[0] + "<br>" + fib[1];
-            
-            //Fibonacci Berekening
-            for(i=2; i < until; i++){
-                fib[i] = fib[i-2] + fib[i-1];
-                if (fib[i] <= until){ // gaat berekening door totdat het de variable "untill" heeft breikt wat de eind getal de gebruiker heeft ingevoerd.
-                    answer += "<br>" + fib[i];
-                }
+    //zet d
+    answer = "";
+    // Pakt de maximale aantal dat je wilt berekenen
+    var until = document.getElementById("getalInputF").value;
+    if (until < 1000) {
+        answer += fib[0] + "<br>" + fib[1];
+
+        //Fibonacci Berekening
+        for (i = 2; i < until; i++) {
+            fib[i] = fib[i - 2] + fib[i - 1];
+            if (fib[i] <= until) { // gaat berekening door totdat het de variable "untill" heeft breikt wat de eind getal de gebruiker heeft ingevoerd.
+                answer += "<br>" + fib[i];
             }
-        }else{
-            answer = "Getal is te hoog."
-        } 
-    
+        }
+    } else {
+        answer = "Getal is te hoog."
+    }
+
     document.getElementById("outputF").innerHTML = answer; //Geeft Uitslag gevens neer
 }
 
 function calcPrimes() {
-    //D.m.v een for-loop doorlopen we alle getallen van 2 t/m 100. Wij gaan controlen welke getalen
-    //priemgetallen zijn.
-    for (var i = 2; i <= 100; i++) {
-
-        //Variabele 'IsPrime' is een type boolean en de waarde hiervan is true. 
-        //Wij gaan ervan uit dat alle getallen tussen de 2 en 100 priemgetallen zijn.
-        var IsPrime = true;
-
-        //Wij maken een tweede for-loop (een loop in een loop), hiermee gaan wij controlen of de
-        //waarde van variabele i deelbaar is door zijn voorgaan de getallen, als:
-        //i 5 is, dan wordt gecontroleerd of i % 2, i % 3 en i % 4 een 0 oplevert.
-        for (var x = 2; x < i; x++) {
-
-            //Als dat het geval is, dan is i deelbaar door 2, 3 of 4.
-            //En is daarom GEEN priemgetal.
-            if (i % x == 0) {
-                //Als de waarde van variabele i GEEN priemgetal is, dan wordt variabele 'IsPrime' op false gezet.
-                IsPrime = false;
+    document.getElementById("outputP").innerHTML = " ";
+    var aantal = document.getElementById("getalInputP").value,
+        getallen = [2];
+    if (aantal > 1) {
+        for (i = 3; i <= aantal; i += 2) {
+            getallen.push(i);
+        }
+        for (i = 1; i < getallen.length; i++) {
+            for (j = getallen[i]; j < aantal; j++) {
+                if (getallen[j] % getallen[i] == 0) {
+                    getallen.splice(j, 1);
+                }
             }
         }
-
-        //Als de waarde van variabele i een priemgetal is, dan wordt de waarde variabele 'i' aan div 'dPrimes' toegevoegd
-        //en anders niet.
-        if (IsPrime == true) {
-            document.getElementById('outputP').innerHTML += i + "<br />";
+        for (i = 0; i < getallen.length; i++) {
+            document.getElementById("outputP").innerHTML += getallen[i] + ",";
         }
-    }
-    new SimpleBar(document.getElementById('outputF'));
+    }new SimpleBar(document.getElementById('outputP'))
 }
+
+
 
 // ____________________________________________________________ Onderdeel 6 Rad
 
@@ -83,8 +75,12 @@ function SpinIt() {
     document.getElementById("rad2").style.transform = "rotate(" + rotation2 + "deg)";
     document.getElementById("rad2").style.transition = "transform " + time + "s";
 
-    setTimeout(function () { getNumber(rotation); }, (time * 1000));
-    setTimeout(function () { getNumber2(rotation2); }, (time * 1000));
+    setTimeout(function () {
+        getNumber(rotation);
+    }, (time * 1000));
+    setTimeout(function () {
+        getNumber2(rotation2);
+    }, (time * 1000));
 }
 
 function getNumber(x) {
@@ -122,5 +118,3 @@ function getNumber2(x) {
         document.getElementById("ipNumberRad2").value = "1";
     }
 }
-
-
